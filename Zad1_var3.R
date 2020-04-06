@@ -82,8 +82,8 @@ all_Chelyabinsk_meteodata [,"month"]= month(all_Chelyabinsk_meteodata$date)
 all_Chelyabinsk_meteodata [,"day_of_the_year"]=yday(all_Chelyabinsk_meteodata$date)
 #проверим результат
 str(all_Chelyabinsk_meteodata)
-#отфильтруем данные за 2002-20117
-years_Chelyabinsk_meteodata = filter(all_Chelyabinsk_meteodata, year >2002&year<2018)
+#отфильтруем данные за 2002-2017
+years_Chelyabinsk_meteodata = filter(all_Chelyabinsk_meteodata, year >2002&year<2017)
 #проверим результат
 str(years_Chelyabinsk_meteodata)
 summary(years_Chelyabinsk_meteodata)
