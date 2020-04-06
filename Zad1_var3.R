@@ -99,7 +99,7 @@ years_Chelyabinsk_meteodata[years_Chelyabinsk_meteodata$tavg<5, "tavg"] = 0
 summary(years_Chelyabinsk_meteodata)
 # Расчитаем суммарную температуру за месяц за 7 лет для всех станций 
 # группируем по метеостанциям, годам и месяцам
-#??group_by
+#group_by
 alldays = group_by(years_Chelyabinsk_meteodata,id,year,month)  
 #функция summarize применяет некоторые действия к отдельным группам, полученным
 #с помощью функции group_by
